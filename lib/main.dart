@@ -131,7 +131,9 @@ class _HomeScreenState extends State<HomeScreen> {
           Positioned(
               bottom: 50,
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  print('Ini bisa di tap');
+                },
                 child: Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
@@ -227,7 +229,7 @@ class _DashboardGridState extends State<DashboardGrid> {
               },
               child: DashboardIcon(dashboardItems[i])),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+            crossAxisCount: 5,
             crossAxisSpacing: 15,
             mainAxisSpacing: 5,
           ),
